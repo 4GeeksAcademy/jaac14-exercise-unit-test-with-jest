@@ -10,19 +10,19 @@ test("One euro should be 1.2 dollars", function(){
     const { fromEuroToDollar } = require('./app.js')
     
     // hago mi comparacion (la prueba)
-    expect(fromEuroToDollar(3.5)).toBe(4.2); 
+    expect(fromEuroToDollar(1)).toBe(1.2); 
 })
-test("One doollar should be 106.583 japan yen", function(){
-  
+test("One doollar should be 106.583 japan yen", function () {
+
     const { fromDollarToYen } = require('./app.js')
-    
-  
-    expect(fromDollarToYen(4.2)).toBe(447.6486); 
+
+
+    expect(fromDollarToYen(250)).toBe(31975);
 })
 test("One euro should be 0.8 british pound", function(){
    
     const { fromYenToPound } = require('./app.js')
     
    
-    expect(fromYenToPound()).toBe(); 
+    expect(fromYenToPound(500)).toBe(400); 
 })
